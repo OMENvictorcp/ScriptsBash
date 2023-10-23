@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "[+] Esta es tu dirección IP privada --> $(ip a | grep eth0 | tail -n 1 | awk '{print $2}' | awk '{print $1}' FS="/")"
